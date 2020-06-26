@@ -1,0 +1,38 @@
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > .content {
+    display: flex;
+    flex-direction: column;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius-base;
+    padding: 30px;
+    > .title {
+      @include heading($heading-font-size);
+      color: $heading-color;
+      padding: 15px;
+      align-self: center;
+    }
+    > .forgot {
+      color: $primary-color;
+    }
+    > .or {
+      align-self: center;
+    }
+    > .line-input {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      border-bottom: $border-width solid $border-color;
+      color: $white;
+    }
+    > .row {
+      margin-top: 15px;
+      & :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

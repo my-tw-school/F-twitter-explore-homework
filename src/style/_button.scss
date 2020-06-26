@@ -1,0 +1,7 @@
+.btn-login {
+  @include btn-variant($primary-color, transparent, $primary-color);
+}
+
+.btn-register {
+  @include btn-variant($white, $primary-color, $primary-color);
+}
